@@ -1,0 +1,19 @@
+.card {
+    background-color: lightblue;
+    border-radius: 1em;
+    padding: 1em;
+    width: 20vw;
+  }
+  
+  .card-header {
+    font-size: larger;font-weight: 900;
+  }
+  
+  .card-body { background-color: white; padding: 10px;
+  }
+
+  
+  
+  
+  
+  

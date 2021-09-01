@@ -1,0 +1,12 @@
+<div class="card">
+
+  <a class="" [routerLink]="['/posts',post.id]">
+    <div class="card-header">{{ post.title | titlecase }}</div>
+  </a>
+  <div class="card-body">
+    {{post.id}}
+    {{post.body | slice:0:10}}
+  </div>
+
+
+</div>
