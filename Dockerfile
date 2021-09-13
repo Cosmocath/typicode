@@ -9,11 +9,11 @@ COPY . .
 # installation des dépendances de Node
 RUN npm install
 # build du projet
-RUN npm run build --optimization=false
+RUN npm run build 
 
 
 # seconde étape: création de l'image Web (nginx)
 FROM nginx:alpine
 # Copie de l'app construite depuis l'étape de construction
-COPY --from=build /angular-app/dist/typicode/ /usr/share/nginx/html
+COPY --from=build /angular-app/dist/ng-typicode/ /usr/share/nginx/html
  
